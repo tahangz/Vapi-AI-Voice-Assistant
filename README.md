@@ -50,13 +50,18 @@ Vapi-AI-Voice-Assistant/
 │
 ├── frontend/            # Vite + React app
 │   ├── src/
+|   |    └── App.jsx
+|   |    └── ai.js
+|   |    └── App.css
+|   |    └── call        # contains the conversation components
 │   ├── package.json
 │   └── vite.config.js
+|   └── .env
 │
 ├── backend/             # Flask API
-│   ├── app.py
+│   ├── main.py
 │   ├── requirements.txt
-│   └── vapi_integration.py
+│   └── .env
 │
 ├── README.md
 └── .gitignore
