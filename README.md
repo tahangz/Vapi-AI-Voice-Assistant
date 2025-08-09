@@ -54,8 +54,8 @@ Vapi-AI-Voice-Assistant/
 |   |    └── ai.js
 |   |    └── App.css
 |   |    └── call        # contains the conversation components
-│   ├── package.json
-│   └── vite.config.js
+│   ├──package.json
+│   ├── vite.config.js
 |   └── .env
 │
 ├── backend/             # Flask API
