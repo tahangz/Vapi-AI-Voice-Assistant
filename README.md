@@ -34,20 +34,19 @@ After the call ends, the app automatically generates and displays a **summary of
 * [Vite](https://vitejs.dev/)
 * [React](https://react.dev/)
 * [Axios](https://axios-http.com/) (for API requests)
-* \[CSS / TailwindCSS] (optional styling choice)
 
 **Backend**
 
 * [Flask](https://flask.palletsprojects.com/)
 * [Vapi](https://vapi.ai/) (Voice AI API)
-* [OpenAI GPT-5](https://platform.openai.com/) integration
+
 
 ---
 
 ## 📂 Project Structure
 
 ```
-voice-assistant-app/
+Vapi-AI-Voice-Assistant/
 │
 ├── frontend/            # Vite + React app
 │   ├── src/
@@ -70,8 +69,8 @@ voice-assistant-app/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/tahangz/Vapi-AI-Voice-Assistant.git
+cd Vapi-AI-Voice-Assistant
 ```
 
 ### 2️⃣ Setup Backend (Flask)
@@ -101,11 +100,17 @@ npm run dev
 
 ## ⚙️ Environment Variables
 
+Create a `.env` file in your **frontend** folder with:
+
+```
+VITE_VAPI_API_KEY="YOUR_VAPI_API_KEY"
+VITE_ASSISTANT_ID="CHOOSEN_ASSISTANT_ID"
+```
 Create a `.env` file in your **backend** folder with:
 
 ```
-VAPI_API_KEY=your_vapi_api_key_here
-OPENAI_API_KEY=your_openai_api_key_here
+VAPI_API_KEY="YOUR_VAPI_API_KEY"
+ASSISTANT_ID="CHOOSEN_ASSISTANT_ID"
 ```
 
 ---
@@ -119,24 +124,8 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots or GIFs here to showcase the app)*
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## 🤝 Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
----
-
-## 👨‍💻 Author
-
-**Taha Naguez** – [GitHub](https://github.com/tahangz)
