@@ -1,0 +1,173 @@
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --muted: #667085;
+  --accent: #2563eb;   /* blue */
+  --accent-600: #1e40af;
+  --danger: #ef4444;
+  --success: #16a34a;
+  --shadow: 0 6px 18px rgba(20,20,50,0.08);
+  --radius: 12px;
+  --glass: rgba(255,255,255,0.7);
+  --transition: 180ms cubic-bezier(.2,.9,.3,1);
+}
+
+/* Layout */
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,var(--bg), #eef3fb); color: #0f172a; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+.app-container{
+  max-width: 760px;
+  margin: 48px auto;
+  padding: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), var(--card));
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(16,24,40,0.04);
+}
+
+/* Header */
+.app-container h1 {
+  margin: 0 0 18px 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.2px;
+  color: #0b1220;
+  font-weight: 600;
+}
+
+/* Form inputs */
+.input-field{
+  width: 100%;
+  display: block;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,42,0.08);
+  background: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
+  box-shadow: 0 1px 0 rgba(16,24,40,0.02) inset;
+}
+
+.input-field::placeholder { color: #98a0b3; }
+
+.input-field:focus{
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(37,99,235,0.08);
+  transform: translateY(-1px);
+}
+
+/* Buttons */
+.button{
+  display: inline-block;
+  padding: 10px 16px;
+  margin-top: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(180deg,var(--accent), var(--accent-600));
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.98rem;
+  box-shadow: 0 8px 18px rgba(37,99,235,0.12);
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+}
+
+.button:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(37,99,235,0.14); }
+.button:active { transform: translateY(0); }
+.button:disabled {
+  opacity: 0.56;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  background: linear-gradient(180deg,#cbd8ff,#aebefc);
+}
+
+/* Loading indicator */
+.loading{
+  width: 48px;
+  height: 48px;
+  margin: 18px auto;
+  border-radius: 50%;
+  position: relative;
+  background: conic-gradient(var(--accent) 30%, rgba(0,0,0,0.06) 0);
+  animation: spin 1s linear infinite;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.06);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Call result card */
+.call-result{
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(245,249,255,0.9), #fff);
+  border: 1px solid rgba(10,20,40,0.04);
+  box-shadow: 0 8px 18px rgba(10,20,40,0.04);
+  color: #0b1220;
+}
+
+.call-result p {
+  margin: 8px 0;
+  font-size: 0.97rem;
+  color: var(--muted);
+}
+
+.call-result p:first-child {
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* small status chips */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(15,23,42,0.04);
+  color: #071029;
+  margin-left: 8px;
+}
+
+/* Assistant speaking indicator (if used inside ActiveCallDetails) */
+.assistant-speaking {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(37,99,235,0.08), rgba(37,99,235,0.02));
+  color: var(--accent-600);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* responsive */
+@media (max-width: 560px){
+  .app-container { margin: 20px; padding: 18px; border-radius: 12px; }
+  .button { width: 100%; text-align: center; }
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+.app-container {
+  width: 100%;
+  max-width: 760px;
+}
