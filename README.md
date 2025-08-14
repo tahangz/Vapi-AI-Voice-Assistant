@@ -15,7 +15,7 @@ After the call ends, the app automatically generates and displays a **summary of
   The assistant talks with the user in real time, powered by **Vapi Agent** and **ChatGPT-5**.
 
 * **Custom Assistant Behavior**
-  Configurable prompts, objectives, and style in the official Vapi platform — for example, screening for a specific role or program.
+  Configurable prompts, objectives, and style in the official Vapi platform [vapi.ai](https://vapi.ai/) — for example, screening for a specific role or program.
 
 * **Automated Conversation Summary**
   After the call ends, a concise summary is displayed in the app.
