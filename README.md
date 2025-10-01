@@ -2,7 +2,7 @@
 
 A full-stack **voice assistant application** built with **Vite + React** on the frontend and **Flask** on the backend, integrated with **Vapi** and powered by **GPT-5**.
 The app allows users to fill in personal details and then engage in a **voice-based conversation** with a GPT-5-powered assistant configured with specific objectives, for example, evaluating if the user is a good fit for a certain **job** or **program**.
-After the call ends, the app automatically generates and displays a **summary of the conversation** .
+After the call ends, the app automatically generates and displays a **summary of the conversation**.
 
 ---
 
